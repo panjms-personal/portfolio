@@ -1,0 +1,12 @@
+"use strict";
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteral"));
+var _styledComponents = require("styled-components");
+var _templateObject;
+var GlobalStyle = (0, _styledComponents.createGlobalStyle)(_templateObject || (_templateObject = (0, _taggedTemplateLiteral2["default"])(["\n  html, body {\n    margin: 0;\n    padding: 0;\n    font-weight: 400;\n    font-size: 16px;\n  }\n\n  .dropdown-closed {\n    left: -100%;\n  }\n\n  .dropdown-open {\n    left: 0;\n    backdrop-filter: blur(5px);\n  }\n"])));
+var _default = GlobalStyle;
+exports["default"] = _default;
