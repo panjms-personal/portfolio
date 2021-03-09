@@ -1056,15 +1056,16 @@ try {
   var _About = _interopRequireDefault(require("./components/About"));
   var _Intro = _interopRequireDefault(require("./components/Intro"));
   var _Technology = _interopRequireDefault(require("./components/Technology"));
+  var _Projects = _interopRequireDefault(require("./components/Projects"));
   var _routes = _interopRequireDefault(require("./routes"));
-  _reactDom["default"].render(/*#__PURE__*/_react["default"].createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react["default"].createElement(_NavBar["default"], null), /*#__PURE__*/_react["default"].createElement(_About["default"], null), /*#__PURE__*/_react["default"].createElement(_Intro["default"], null), /*#__PURE__*/_react["default"].createElement(_Technology["default"], null), /*#__PURE__*/_react["default"].createElement(_routes["default"], null)), document.getElementById('app'));
+  _reactDom["default"].render(/*#__PURE__*/_react["default"].createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react["default"].createElement(_NavBar["default"], null), /*#__PURE__*/_react["default"].createElement(_Intro["default"], null), /*#__PURE__*/_react["default"].createElement(_About["default"], null), /*#__PURE__*/_react["default"].createElement(_Technology["default"], null), /*#__PURE__*/_react["default"].createElement(_Projects["default"], null), /*#__PURE__*/_react["default"].createElement(_routes["default"], null)), document.getElementById('app'));
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","react":"3b2NM","react-dom":"2sg1U","react-router-dom":"1PMSK","./components/NavBar":"4gDXa","./routes":"6Ogol","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./components/About":"2l88B","./components/Intro":"7mRXw","./components/Technology":"4YwyH"}],"4ttVj":[function(require,module,exports) {
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","react":"3b2NM","react-dom":"2sg1U","react-router-dom":"1PMSK","./components/NavBar":"4gDXa","./routes":"6Ogol","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./components/About":"2l88B","./components/Intro":"7mRXw","./components/Technology":"4YwyH","./components/Projects":"4UvpH"}],"4ttVj":[function(require,module,exports) {
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
     "default": obj
@@ -41930,11 +41931,53 @@ try {
   var _reactRouterDom = require("react-router-dom");
   var _styledComponents = _interopRequireDefault(require("styled-components"));
   var _GlobalStyles = _interopRequireDefault(require("../GlobalStyles"));
+  var _templateObject, _templateObject2, _templateObject3;
+  function About() {
+    return (
+      /*#__PURE__*/_react["default"].createElement(Container, null, /*#__PURE__*/_react["default"].createElement(_GlobalStyles["default"], null), /*#__PURE__*/_react["default"].createElement(ContentContainer, null, /*#__PURE__*/_react["default"].createElement(ContentItem, null, "Hello! My name is James and I am a full-stack software engineer based in New York City."), /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement(ContentItem, null, "I began my career as an elementary school teacher in the South Bronx. After looking for a more technical position, I became a Credit Risk Analyst where I found my passion for coding during one of projects."), /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement(ContentItem, null, "Most recently, I graduated from Fullstack Academy, a 17-week long immersive coding bootcamp, where I learned the core components for full stack JavaScript web development through pair programming and team projects."), /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement(ContentItem, null, "I am passionate about both building & problem-solving and am looking to extend this passion as a full time software engineer.")))
+    );
+  }
+  _c = About;
+  var Container = _styledComponents["default"].div(_templateObject || (_templateObject = (0, _taggedTemplateLiteral2["default"])(["\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  width: 100%;\n  padding: 10rem 0 10rem 0;\n"])));
+  _c2 = Container;
+  var ContentContainer = _styledComponents["default"].div(_templateObject2 || (_templateObject2 = (0, _taggedTemplateLiteral2["default"])(["\n  display: flex;\n  width: 50%;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n"])));
+  _c3 = ContentContainer;
+  var ContentItem = _styledComponents["default"].div(_templateObject3 || (_templateObject3 = (0, _taggedTemplateLiteral2["default"])(["\n  color: rgb(7, 35, 82);\n"])));
+  _c4 = ContentItem;
+  var _c, _c2, _c3, _c4;
+  $RefreshReg$(_c, "About");
+  $RefreshReg$(_c2, "Container");
+  $RefreshReg$(_c3, "ContentContainer");
+  $RefreshReg$(_c4, "ContentItem");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/interopRequireWildcard":"28En5","@babel/runtime/helpers/taggedTemplateLiteral":"7sCVt","react":"3b2NM","react-router-dom":"1PMSK","styled-components":"4eiLw","../GlobalStyles":"2wx36","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"7mRXw":[function(require,module,exports) {
+"use strict";
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+  var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports["default"] = Intro;
+  var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteral"));
+  var _react = _interopRequireWildcard(require("react"));
+  var _reactRouterDom = require("react-router-dom");
+  var _styledComponents = _interopRequireDefault(require("styled-components"));
+  var _GlobalStyles = _interopRequireDefault(require("../GlobalStyles"));
   var _reactFontawesome = require("@fortawesome/react-fontawesome");
   var _freeBrandsSvgIcons = require("@fortawesome/free-brands-svg-icons");
   var _freeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
   var _templateObject, _templateObject2, _templateObject3;
-  function About() {
+  function Intro() {
     return (
       /*#__PURE__*/_react["default"].createElement(Container, null, /*#__PURE__*/_react["default"].createElement(ContentContainer, null, /*#__PURE__*/_react["default"].createElement(ContentItem, {
         style: {
@@ -41965,7 +42008,7 @@ try {
       }))))
     );
   }
-  _c = About;
+  _c = Intro;
   var Container = _styledComponents["default"].div(_templateObject || (_templateObject = (0, _taggedTemplateLiteral2["default"])(["\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  width: 100%;\n  height: 100vh;\n  background-image: url('https://images.unsplash.com/photo-1596683720379-b11030608876?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2250&q=80');\n  background-size: cover;\n"])));
   _c2 = Container;
   var ContentContainer = _styledComponents["default"].div(_templateObject2 || (_templateObject2 = (0, _taggedTemplateLiteral2["default"])(["\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n"])));
@@ -41973,7 +42016,7 @@ try {
   var ContentItem = _styledComponents["default"].div(_templateObject3 || (_templateObject3 = (0, _taggedTemplateLiteral2["default"])(["\n  color: white;\n"])));
   _c4 = ContentItem;
   var _c, _c2, _c3, _c4;
-  $RefreshReg$(_c, "About");
+  $RefreshReg$(_c, "Intro");
   $RefreshReg$(_c2, "Container");
   $RefreshReg$(_c3, "ContentContainer");
   $RefreshReg$(_c4, "ContentItem");
@@ -41983,7 +42026,7 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/interopRequireWildcard":"28En5","@babel/runtime/helpers/taggedTemplateLiteral":"7sCVt","react":"3b2NM","react-router-dom":"1PMSK","styled-components":"4eiLw","../GlobalStyles":"2wx36","@fortawesome/react-fontawesome":"6F8xf","@fortawesome/free-brands-svg-icons":"4To7B","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","@fortawesome/free-solid-svg-icons":"N79PA"}],"4To7B":[function(require,module,exports) {
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/interopRequireWildcard":"28En5","@babel/runtime/helpers/taggedTemplateLiteral":"7sCVt","react":"3b2NM","react-router-dom":"1PMSK","styled-components":"4eiLw","../GlobalStyles":"2wx36","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","@fortawesome/react-fontawesome":"6F8xf","@fortawesome/free-brands-svg-icons":"4To7B","@fortawesome/free-solid-svg-icons":"N79PA"}],"4To7B":[function(require,module,exports) {
 var define;
 /*!
 * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
@@ -45209,49 +45252,7 @@ var define;
   });
 });
 
-},{}],"7mRXw":[function(require,module,exports) {
-"use strict";
-var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-helpers.prelude(module);
-try {
-  var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-  var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports["default"] = Intro;
-  var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteral"));
-  var _react = _interopRequireWildcard(require("react"));
-  var _reactRouterDom = require("react-router-dom");
-  var _styledComponents = _interopRequireDefault(require("styled-components"));
-  var _GlobalStyles = _interopRequireDefault(require("../GlobalStyles"));
-  var _templateObject, _templateObject2, _templateObject3;
-  function Intro() {
-    return (
-      /*#__PURE__*/_react["default"].createElement(Container, null, /*#__PURE__*/_react["default"].createElement(ContentContainer, null, /*#__PURE__*/_react["default"].createElement(ContentItem, null, "Hello! My name is James and I am a full-stack software engineer based in New York City."), /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement(ContentItem, null, "I began my career as an elementary school teacher in the South Bronx. After looking for a more technical position, I became a Credit Risk Analyst where I found my passion for coding during one of projects."), /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement(ContentItem, null, "Most recently, I graduated from Fullstack Academy, a 17-week long immersive coding bootcamp, where I learned the core components for full stack JavaScript web development through pair programming and team projects."), /*#__PURE__*/_react["default"].createElement("br", null), /*#__PURE__*/_react["default"].createElement(ContentItem, null, "I am passionate about both building & problem-solving and am looking to extend this passion as a full time software engineer.")))
-    );
-  }
-  _c = Intro;
-  var Container = _styledComponents["default"].div(_templateObject || (_templateObject = (0, _taggedTemplateLiteral2["default"])(["\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  width: 100%;\n  padding: 10rem 0 10rem 0;\n"])));
-  _c2 = Container;
-  var ContentContainer = _styledComponents["default"].div(_templateObject2 || (_templateObject2 = (0, _taggedTemplateLiteral2["default"])(["\n  display: flex;\n  width: 50%;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n"])));
-  _c3 = ContentContainer;
-  var ContentItem = _styledComponents["default"].div(_templateObject3 || (_templateObject3 = (0, _taggedTemplateLiteral2["default"])(["\n  color: rgb(7, 35, 82);\n"])));
-  _c4 = ContentItem;
-  var _c, _c2, _c3, _c4;
-  $RefreshReg$(_c, "Intro");
-  $RefreshReg$(_c2, "Container");
-  $RefreshReg$(_c3, "ContentContainer");
-  $RefreshReg$(_c4, "ContentItem");
-  helpers.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/interopRequireWildcard":"28En5","@babel/runtime/helpers/taggedTemplateLiteral":"7sCVt","react":"3b2NM","react-router-dom":"1PMSK","styled-components":"4eiLw","../GlobalStyles":"2wx36","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4YwyH":[function(require,module,exports) {
+},{}],"4YwyH":[function(require,module,exports) {
 "use strict";
 var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
@@ -45295,6 +45296,62 @@ try {
   $RefreshReg$(_c2, "Container");
   $RefreshReg$(_c3, "ContentContainer");
   $RefreshReg$(_c4, "ContentItem");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/interopRequireWildcard":"28En5","@babel/runtime/helpers/taggedTemplateLiteral":"7sCVt","react":"3b2NM","react-router-dom":"1PMSK","styled-components":"4eiLw","../GlobalStyles":"2wx36","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4UvpH":[function(require,module,exports) {
+"use strict";
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+  var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports["default"] = Project;
+  var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteral"));
+  var _react = _interopRequireWildcard(require("react"));
+  var _reactRouterDom = require("react-router-dom");
+  var _styledComponents = _interopRequireDefault(require("styled-components"));
+  var _GlobalStyles = _interopRequireDefault(require("../GlobalStyles"));
+  var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7;
+  function Project() {
+    return (
+      /*#__PURE__*/_react["default"].createElement(Container, null, /*#__PURE__*/_react["default"].createElement(ContentContainer, null, /*#__PURE__*/_react["default"].createElement(ProjectContainer, null, /*#__PURE__*/_react["default"].createElement(ProjectImage, {
+        src: "https://image.shutterstock.com/image-photo/mountains-under-mist-morning-amazing-260nw-1725825019.jpg"
+      }), /*#__PURE__*/_react["default"].createElement(ProjectBody, null, /*#__PURE__*/_react["default"].createElement(ProjectHeader, null, "Don't Skip Leg Day (DSLD)"), /*#__PURE__*/_react["default"].createElement(ProjectDescription, null, "DSLD is a fitness companion.")))))
+    );
+  }
+  _c = Project;
+  var Container = _styledComponents["default"].div(_templateObject || (_templateObject = (0, _taggedTemplateLiteral2["default"])(["\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  width: 100%;\n  padding: 3rem 0 3rem 0;\n  background-color: white;\n"])));
+  _c2 = Container;
+  var ContentContainer = _styledComponents["default"].div(_templateObject2 || (_templateObject2 = (0, _taggedTemplateLiteral2["default"])(["\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n"])));
+  _c3 = ContentContainer;
+  var ProjectContainer = _styledComponents["default"].div(_templateObject3 || (_templateObject3 = (0, _taggedTemplateLiteral2["default"])(["\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n  width: 80%;\n"])));
+  _c4 = ProjectContainer;
+  var ProjectBody = _styledComponents["default"].div(_templateObject4 || (_templateObject4 = (0, _taggedTemplateLiteral2["default"])([""])));
+  _c5 = ProjectBody;
+  var ProjectImage = _styledComponents["default"].img(_templateObject5 || (_templateObject5 = (0, _taggedTemplateLiteral2["default"])([""])));
+  _c6 = ProjectImage;
+  var ProjectHeader = _styledComponents["default"].h1(_templateObject6 || (_templateObject6 = (0, _taggedTemplateLiteral2["default"])([""])));
+  _c7 = ProjectHeader;
+  var ProjectDescription = _styledComponents["default"].div(_templateObject7 || (_templateObject7 = (0, _taggedTemplateLiteral2["default"])([""])));
+  _c8 = ProjectDescription;
+  var _c, _c2, _c3, _c4, _c5, _c6, _c7, _c8;
+  $RefreshReg$(_c, "Project");
+  $RefreshReg$(_c2, "Container");
+  $RefreshReg$(_c3, "ContentContainer");
+  $RefreshReg$(_c4, "ProjectContainer");
+  $RefreshReg$(_c5, "ProjectBody");
+  $RefreshReg$(_c6, "ProjectImage");
+  $RefreshReg$(_c7, "ProjectHeader");
+  $RefreshReg$(_c8, "ProjectDescription");
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
