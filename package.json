@@ -36,6 +36,7 @@
     "@babel/plugin-transform-runtime": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
+    "@parcel/transformer-image": "^2.0.0-nightly.2243",
     "parcel": "^2.0.0-nightly.389"
   }
 }

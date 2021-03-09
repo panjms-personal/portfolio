@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
     font-weight: 400;
     font-size: 16px;
+    overscroll-behavior: none;
   }
 
   .dropdown-closed {

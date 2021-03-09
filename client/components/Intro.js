@@ -10,26 +10,32 @@ export default function Intro() {
   return (
     <Container>
       <ContentContainer>
-        <ContentItem style={{ fontSize: '3rem' }}>JAMES PAN</ContentItem>
+        <ContentItem style={{ fontSize: '4rem' }}>JAMES PAN</ContentItem>
         <ContentItem style={{ fontSize: '1.8rem' }}>
           SOFTWARE ENGINEER
         </ContentItem>
         <ContentItem>
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            onClick={function () {}}
-            style={{ fontSize: '1.5rem' }}
-          />
-          <FontAwesomeIcon
-            icon={faGithub}
-            onClick={function () {}}
-            style={{ fontSize: '1.5rem' }}
-          />
-          <FontAwesomeIcon
-            icon={faEnvelopeSquare}
-            onClick={function () {}}
-            style={{ fontSize: '1.5rem' }}
-          />
+          <SocialsLink href="https://www.linkedin.com/in/james--pan/">
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              onClick={function () {}}
+              style={{ fontSize: '1.5rem' }}
+            />
+          </SocialsLink>
+          <SocialsLink href="https://github.com/panjms">
+            <FontAwesomeIcon
+              icon={faGithub}
+              onClick={function () {}}
+              style={{ fontSize: '1.5rem' }}
+            />
+          </SocialsLink>
+          <SocialsLink href="mailto:panjms@gmail.com?subject=Hello!">
+            <FontAwesomeIcon
+              icon={faEnvelopeSquare}
+              onClick={function () {}}
+              style={{ fontSize: '1.5rem' }}
+            />
+          </SocialsLink>
         </ContentItem>
       </ContentContainer>
     </Container>
@@ -56,4 +62,10 @@ const ContentContainer = styled.div`
 
 const ContentItem = styled.div`
   color: white;
+`;
+
+const SocialsLink = styled.a`
+  text-decoration: none;
+  color: white;
+  padding: 0.7rem 0.2rem 0 0.2rem;
 `;

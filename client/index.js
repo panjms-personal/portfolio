@@ -6,6 +6,7 @@ import About from './components/About';
 import Intro from './components/Intro';
 import Technology from './components/Technology';
 import Project from './components/Projects';
+import Footer from './components/Footer';
 import Routes from './routes';
 
 ReactDOM.render(
@@ -15,6 +16,7 @@ ReactDOM.render(
     <About />
     <Technology />
     <Project />
+    <Footer />
     <Routes />
   </Router>,
   document.getElementById('app')

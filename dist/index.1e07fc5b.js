@@ -1057,15 +1057,16 @@ try {
   var _Intro = _interopRequireDefault(require("./components/Intro"));
   var _Technology = _interopRequireDefault(require("./components/Technology"));
   var _Projects = _interopRequireDefault(require("./components/Projects"));
+  var _Footer = _interopRequireDefault(require("./components/Footer"));
   var _routes = _interopRequireDefault(require("./routes"));
-  _reactDom["default"].render(/*#__PURE__*/_react["default"].createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react["default"].createElement(_NavBar["default"], null), /*#__PURE__*/_react["default"].createElement(_Intro["default"], null), /*#__PURE__*/_react["default"].createElement(_About["default"], null), /*#__PURE__*/_react["default"].createElement(_Technology["default"], null), /*#__PURE__*/_react["default"].createElement(_Projects["default"], null), /*#__PURE__*/_react["default"].createElement(_routes["default"], null)), document.getElementById('app'));
+  _reactDom["default"].render(/*#__PURE__*/_react["default"].createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react["default"].createElement(_NavBar["default"], null), /*#__PURE__*/_react["default"].createElement(_Intro["default"], null), /*#__PURE__*/_react["default"].createElement(_About["default"], null), /*#__PURE__*/_react["default"].createElement(_Technology["default"], null), /*#__PURE__*/_react["default"].createElement(_Projects["default"], null), /*#__PURE__*/_react["default"].createElement(_Footer["default"], null), /*#__PURE__*/_react["default"].createElement(_routes["default"], null)), document.getElementById('app'));
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","react":"3b2NM","react-dom":"2sg1U","react-router-dom":"1PMSK","./components/NavBar":"4gDXa","./routes":"6Ogol","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./components/About":"2l88B","./components/Intro":"7mRXw","./components/Technology":"4YwyH","./components/Projects":"4UvpH"}],"4ttVj":[function(require,module,exports) {
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","react":"3b2NM","react-dom":"2sg1U","react-router-dom":"1PMSK","./components/NavBar":"4gDXa","./routes":"6Ogol","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./components/About":"2l88B","./components/Intro":"7mRXw","./components/Technology":"4YwyH","./components/Projects":"4UvpH","./components/Footer":"6AADA"}],"4ttVj":[function(require,module,exports) {
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
     "default": obj
@@ -32230,7 +32231,7 @@ exports["default"] = void 0;
 var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteral"));
 var _styledComponents = require("styled-components");
 var _templateObject;
-var GlobalStyle = (0, _styledComponents.createGlobalStyle)(_templateObject || (_templateObject = (0, _taggedTemplateLiteral2["default"])(["\n  html, body {\n    margin: 0;\n    padding: 0;\n    font-family: \"Noto Sans\", \"Noto Sans CJK JP\", sans-serif;\n    font-weight: 400;\n    font-size: 16px;\n  }\n\n  .dropdown-closed {\n    left: -100%;\n  }\n\n  .dropdown-open {\n    left: 0;\n    backdrop-filter: blur(5px);\n  }\n\n  @media only screen and (min-width: 753px){\n    .dropdown-closed {\n    left: -40%;\n  }\n\n  .dropdown-open {\n    left: 0;\n    backdrop-filter: blur(5px);\n  }\n  }\n\n  @media only screen and (min-width: 960px) {\n    .dropdown-closed {\n    left: -40%;\n  }\n\n    .dropdown-open {\n      left: 0;\n          backdrop-filter: blur(5px);\n    }\n  }\n\n  .dropdown-closed-right {\n    left: 100%;\n  }\n\n  .dropdown-open-right {\n    left: 0;\n        backdrop-filter: blur(5px);\n  }\n\n  @media only screen and (min-width: 674px) {\n  .dropdown-closed-right {\n    left: 100%;\n  }\n\n  .dropdown-open-right {\n    left: 70%;\n    backdrop-filter: blur(5px);\n  }\n  }\n\n  @media only screen and (max-width: 959px){\n  }\n\n\n@media only screen and (min-width: 500px){\n\n}\n\n@media only screen and (min-width: 960px) {\n}\n"])));
+var GlobalStyle = (0, _styledComponents.createGlobalStyle)(_templateObject || (_templateObject = (0, _taggedTemplateLiteral2["default"])(["\n  html, body {\n    margin: 0;\n    padding: 0;\n    font-family: \"Noto Sans\", \"Noto Sans CJK JP\", sans-serif;\n    font-weight: 400;\n    font-size: 16px;\n    overscroll-behavior: none;\n  }\n\n  .dropdown-closed {\n    left: -100%;\n  }\n\n  .dropdown-open {\n    left: 0;\n    backdrop-filter: blur(5px);\n  }\n\n  @media only screen and (min-width: 753px){\n    .dropdown-closed {\n    left: -40%;\n  }\n\n  .dropdown-open {\n    left: 0;\n    backdrop-filter: blur(5px);\n  }\n  }\n\n  @media only screen and (min-width: 960px) {\n    .dropdown-closed {\n    left: -40%;\n  }\n\n    .dropdown-open {\n      left: 0;\n          backdrop-filter: blur(5px);\n    }\n  }\n\n  .dropdown-closed-right {\n    left: 100%;\n  }\n\n  .dropdown-open-right {\n    left: 0;\n        backdrop-filter: blur(5px);\n  }\n\n  @media only screen and (min-width: 674px) {\n  .dropdown-closed-right {\n    left: 100%;\n  }\n\n  .dropdown-open-right {\n    left: 70%;\n    backdrop-filter: blur(5px);\n  }\n  }\n\n  @media only screen and (max-width: 959px){\n  }\n\n\n@media only screen and (min-width: 500px){\n\n}\n\n@media only screen and (min-width: 960px) {\n}\n"])));
 var _default = GlobalStyle;
 exports["default"] = _default;
 
@@ -41976,36 +41977,42 @@ try {
   var _reactFontawesome = require("@fortawesome/react-fontawesome");
   var _freeBrandsSvgIcons = require("@fortawesome/free-brands-svg-icons");
   var _freeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
-  var _templateObject, _templateObject2, _templateObject3;
+  var _templateObject, _templateObject2, _templateObject3, _templateObject4;
   function Intro() {
     return (
       /*#__PURE__*/_react["default"].createElement(Container, null, /*#__PURE__*/_react["default"].createElement(ContentContainer, null, /*#__PURE__*/_react["default"].createElement(ContentItem, {
         style: {
-          fontSize: '3rem'
+          fontSize: '4rem'
         }
       }, "JAMES PAN"), /*#__PURE__*/_react["default"].createElement(ContentItem, {
         style: {
           fontSize: '1.8rem'
         }
-      }, "SOFTWARE ENGINEER"), /*#__PURE__*/_react["default"].createElement(ContentItem, null, /*#__PURE__*/_react["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+      }, "SOFTWARE ENGINEER"), /*#__PURE__*/_react["default"].createElement(ContentItem, null, /*#__PURE__*/_react["default"].createElement(SocialsLink, {
+        href: "https://www.linkedin.com/in/james--pan/"
+      }, /*#__PURE__*/_react["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
         icon: _freeBrandsSvgIcons.faLinkedin,
         onClick: function onClick() {},
         style: {
           fontSize: '1.5rem'
         }
-      }), /*#__PURE__*/_react["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+      })), /*#__PURE__*/_react["default"].createElement(SocialsLink, {
+        href: "https://github.com/panjms"
+      }, /*#__PURE__*/_react["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
         icon: _freeBrandsSvgIcons.faGithub,
         onClick: function onClick() {},
         style: {
           fontSize: '1.5rem'
         }
-      }), /*#__PURE__*/_react["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+      })), /*#__PURE__*/_react["default"].createElement(SocialsLink, {
+        href: "mailto:panjms@gmail.com?subject=Hello!"
+      }, /*#__PURE__*/_react["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
         icon: _freeSolidSvgIcons.faEnvelopeSquare,
         onClick: function onClick() {},
         style: {
           fontSize: '1.5rem'
         }
-      }))))
+      })))))
     );
   }
   _c = Intro;
@@ -42015,11 +42022,14 @@ try {
   _c3 = ContentContainer;
   var ContentItem = _styledComponents["default"].div(_templateObject3 || (_templateObject3 = (0, _taggedTemplateLiteral2["default"])(["\n  color: white;\n"])));
   _c4 = ContentItem;
-  var _c, _c2, _c3, _c4;
+  var SocialsLink = _styledComponents["default"].a(_templateObject4 || (_templateObject4 = (0, _taggedTemplateLiteral2["default"])(["\n  text-decoration: none;\n  color: white;\n  padding: 0.7rem 0.2rem 0 0.2rem;\n"])));
+  _c5 = SocialsLink;
+  var _c, _c2, _c3, _c4, _c5;
   $RefreshReg$(_c, "Intro");
   $RefreshReg$(_c2, "Container");
   $RefreshReg$(_c3, "ContentContainer");
   $RefreshReg$(_c4, "ContentItem");
+  $RefreshReg$(_c5, "SocialsLink");
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
@@ -45319,13 +45329,61 @@ try {
   var _react = _interopRequireWildcard(require("react"));
   var _reactRouterDom = require("react-router-dom");
   var _styledComponents = _interopRequireDefault(require("styled-components"));
+  var _reactFontawesome = require("@fortawesome/react-fontawesome");
+  var _freeBrandsSvgIcons = require("@fortawesome/free-brands-svg-icons");
   var _GlobalStyles = _interopRequireDefault(require("../GlobalStyles"));
-  var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7;
+  var _DSLDMock = _interopRequireDefault(require("url:~/public/images/DSLDMock.png"));
+  var _StackafourMock = _interopRequireDefault(require("url:~/public/images/StackafourMock.png"));
+  var _P2PMock = _interopRequireDefault(require("url:~/public/images/P2PMock.png"));
+  var _JBSMock = _interopRequireDefault(require("url:~/public/images/JBSMock.png"));
+  var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8, _templateObject9;
   function Project() {
     return (
       /*#__PURE__*/_react["default"].createElement(Container, null, /*#__PURE__*/_react["default"].createElement(ContentContainer, null, /*#__PURE__*/_react["default"].createElement(ProjectContainer, null, /*#__PURE__*/_react["default"].createElement(ProjectImage, {
-        src: "https://image.shutterstock.com/image-photo/mountains-under-mist-morning-amazing-260nw-1725825019.jpg"
-      }), /*#__PURE__*/_react["default"].createElement(ProjectBody, null, /*#__PURE__*/_react["default"].createElement(ProjectHeader, null, "Don't Skip Leg Day (DSLD)"), /*#__PURE__*/_react["default"].createElement(ProjectDescription, null, "DSLD is a fitness companion.")))))
+        src: _DSLDMock["default"]
+      }), /*#__PURE__*/_react["default"].createElement(ProjectBody, null, /*#__PURE__*/_react["default"].createElement(ProjectHeader, null, "Don't Skip Leg Day (DSLD)"), /*#__PURE__*/_react["default"].createElement(ProjectDescription, null, "DSLD is a fitness companion."), /*#__PURE__*/_react["default"].createElement(ProjectLinks, null, /*#__PURE__*/_react["default"].createElement(ProjectLink, {
+        href: "https://dsld-6914b.web.app/"
+      }, "Visit"), /*#__PURE__*/_react["default"].createElement(ProjectLink, {
+        href: "https://github.com/2011-FSA-CRAB/DSLD"
+      }, "Github ", '   ', /*#__PURE__*/_react["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+        icon: _freeBrandsSvgIcons.faGithub,
+        style: {
+          fontSize: '1.5rem'
+        }
+      }))))), /*#__PURE__*/_react["default"].createElement(ProjectContainer, null, /*#__PURE__*/_react["default"].createElement(ProjectImage, {
+        src: _StackafourMock["default"]
+      }), /*#__PURE__*/_react["default"].createElement(ProjectBody, null, /*#__PURE__*/_react["default"].createElement(ProjectHeader, null, "Stackafour"), /*#__PURE__*/_react["default"].createElement(ProjectDescription, null, "Stackafour is a webapp implementation of Connect4, built with D3.js and custom game logic."), /*#__PURE__*/_react["default"].createElement(ProjectLinks, null, /*#__PURE__*/_react["default"].createElement(ProjectLink, {
+        href: "http://stackafour.herokuapp.com/"
+      }, "Visit"), /*#__PURE__*/_react["default"].createElement(ProjectLink, {
+        href: "https://github.com/panjms/d3c4"
+      }, "Github ", '   ', /*#__PURE__*/_react["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+        icon: _freeBrandsSvgIcons.faGithub,
+        style: {
+          fontSize: '1.5rem'
+        }
+      }))))), /*#__PURE__*/_react["default"].createElement(ProjectContainer, null, /*#__PURE__*/_react["default"].createElement(ProjectImage, {
+        src: _P2PMock["default"]
+      }), /*#__PURE__*/_react["default"].createElement(ProjectBody, null, /*#__PURE__*/_react["default"].createElement(ProjectHeader, null, "Pan to Pan (P2P)"), /*#__PURE__*/_react["default"].createElement(ProjectDescription, null, "P2P is a food blog I coded while learning basic web development on my own. It is coded with basic HTML/CSS/JavaScript and houses pictures of food that I either made myself or enjoyed while traveling!"), /*#__PURE__*/_react["default"].createElement(ProjectLinks, null, /*#__PURE__*/_react["default"].createElement(ProjectLink, {
+        href: "https://panjms.github.io"
+      }, "Visit"), /*#__PURE__*/_react["default"].createElement(ProjectLink, {
+        href: "https://github.com/panjms/panjms.github.io"
+      }, "Github ", '   ', /*#__PURE__*/_react["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+        icon: _freeBrandsSvgIcons.faGithub,
+        style: {
+          fontSize: '1.5rem'
+        }
+      }))))), /*#__PURE__*/_react["default"].createElement(ProjectContainer, null, /*#__PURE__*/_react["default"].createElement(ProjectImage, {
+        src: _JBSMock["default"]
+      }), /*#__PURE__*/_react["default"].createElement(ProjectBody, null, /*#__PURE__*/_react["default"].createElement(ProjectHeader, null, "Jelly Beans and Shoes (JBS)"), /*#__PURE__*/_react["default"].createElement(ProjectDescription, null, "JBS is a mock e-commerce website selling various electronic devices."), /*#__PURE__*/_react["default"].createElement(ProjectLinks, null, /*#__PURE__*/_react["default"].createElement(ProjectLink, {
+        href: "http://jellybeansandshoes.herokuapp.com/"
+      }, "Visit"), /*#__PURE__*/_react["default"].createElement(ProjectLink, {
+        href: "https://github.com/2011-FSA-GS-OMEGA/GraceShopper"
+      }, "Github ", '   ', /*#__PURE__*/_react["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+        icon: _freeBrandsSvgIcons.faGithub,
+        style: {
+          fontSize: '1.5rem'
+        }
+      })))))))
     );
   }
   _c = Project;
@@ -45333,25 +45391,124 @@ try {
   _c2 = Container;
   var ContentContainer = _styledComponents["default"].div(_templateObject2 || (_templateObject2 = (0, _taggedTemplateLiteral2["default"])(["\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n"])));
   _c3 = ContentContainer;
-  var ProjectContainer = _styledComponents["default"].div(_templateObject3 || (_templateObject3 = (0, _taggedTemplateLiteral2["default"])(["\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n  width: 80%;\n"])));
+  var ProjectContainer = _styledComponents["default"].div(_templateObject3 || (_templateObject3 = (0, _taggedTemplateLiteral2["default"])(["\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: space-between;\n  margin: 2rem 0 2rem 0;\n  width: 80%;\n"])));
   _c4 = ProjectContainer;
-  var ProjectBody = _styledComponents["default"].div(_templateObject4 || (_templateObject4 = (0, _taggedTemplateLiteral2["default"])([""])));
-  _c5 = ProjectBody;
-  var ProjectImage = _styledComponents["default"].img(_templateObject5 || (_templateObject5 = (0, _taggedTemplateLiteral2["default"])([""])));
-  _c6 = ProjectImage;
+  var ProjectImage = _styledComponents["default"].img(_templateObject4 || (_templateObject4 = (0, _taggedTemplateLiteral2["default"])(["\n  width: 40%;\n"])));
+  _c5 = ProjectImage;
+  var ProjectBody = _styledComponents["default"].div(_templateObject5 || (_templateObject5 = (0, _taggedTemplateLiteral2["default"])(["\n  width: 55%;\n"])));
+  _c6 = ProjectBody;
   var ProjectHeader = _styledComponents["default"].h1(_templateObject6 || (_templateObject6 = (0, _taggedTemplateLiteral2["default"])([""])));
   _c7 = ProjectHeader;
   var ProjectDescription = _styledComponents["default"].div(_templateObject7 || (_templateObject7 = (0, _taggedTemplateLiteral2["default"])([""])));
   _c8 = ProjectDescription;
-  var _c, _c2, _c3, _c4, _c5, _c6, _c7, _c8;
+  var ProjectLinks = _styledComponents["default"].div(_templateObject8 || (_templateObject8 = (0, _taggedTemplateLiteral2["default"])(["\n  display: flex;\n  flex-direction: row;\n  align-items: baseline;\n  justify-content: center;\n"])));
+  _c9 = ProjectLinks;
+  var ProjectLink = _styledComponents["default"].a(_templateObject9 || (_templateObject9 = (0, _taggedTemplateLiteral2["default"])(["\n  padding: 0.5rem 1rem 0.5rem 1rem;\n"])));
+  _c10 = ProjectLink;
+  var _c, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10;
   $RefreshReg$(_c, "Project");
   $RefreshReg$(_c2, "Container");
   $RefreshReg$(_c3, "ContentContainer");
   $RefreshReg$(_c4, "ProjectContainer");
-  $RefreshReg$(_c5, "ProjectBody");
-  $RefreshReg$(_c6, "ProjectImage");
+  $RefreshReg$(_c5, "ProjectImage");
+  $RefreshReg$(_c6, "ProjectBody");
   $RefreshReg$(_c7, "ProjectHeader");
   $RefreshReg$(_c8, "ProjectDescription");
+  $RefreshReg$(_c9, "ProjectLinks");
+  $RefreshReg$(_c10, "ProjectLink");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/interopRequireWildcard":"28En5","@babel/runtime/helpers/taggedTemplateLiteral":"7sCVt","react":"3b2NM","react-router-dom":"1PMSK","styled-components":"4eiLw","../GlobalStyles":"2wx36","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","@fortawesome/react-fontawesome":"6F8xf","@fortawesome/free-brands-svg-icons":"4To7B","url:~/public/images/DSLDMock.png":"45Fdk","url:~/public/images/StackafourMock.png":"5FrLI","url:~/public/images/P2PMock.png":"3Zw07","url:~/public/images/JBSMock.png":"34uh7"}],"45Fdk":[function(require,module,exports) {
+module.exports = require('./bundle-url').getBundleURL() + "DSLDMock.0934fbe6.png"
+},{"./bundle-url":"3seVR"}],"3seVR":[function(require,module,exports) {
+"use strict";
+
+/* globals document:readonly */
+var bundleURL = null;
+
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
+  }
+
+  return bundleURL;
+}
+
+function getBundleURL() {
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
+
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
+  }
+
+  return '/';
+}
+
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+
+
+function getOrigin(url) {
+  let matches = ('' + url).match(/(https?|file|ftp):\/\/[^/]+/);
+
+  if (!matches) {
+    throw new Error('Origin not found');
+  }
+
+  return matches[0];
+}
+
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+},{}],"5FrLI":[function(require,module,exports) {
+module.exports = require('./bundle-url').getBundleURL() + "StackafourMock.8054739a.png"
+},{"./bundle-url":"3seVR"}],"3Zw07":[function(require,module,exports) {
+module.exports = require('./bundle-url').getBundleURL() + "P2PMock.29fa9427.png"
+},{"./bundle-url":"3seVR"}],"34uh7":[function(require,module,exports) {
+module.exports = require('./bundle-url').getBundleURL() + "JBSMock.32cdebe1.png"
+},{"./bundle-url":"3seVR"}],"6AADA":[function(require,module,exports) {
+"use strict";
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+  var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports["default"] = Footer;
+  var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteral"));
+  var _react = _interopRequireWildcard(require("react"));
+  var _reactRouterDom = require("react-router-dom");
+  var _styledComponents = _interopRequireDefault(require("styled-components"));
+  var _GlobalStyles = _interopRequireDefault(require("../GlobalStyles"));
+  var _templateObject, _templateObject2;
+  function Footer() {
+    return (
+      /*#__PURE__*/_react["default"].createElement(Container, null, /*#__PURE__*/_react["default"].createElement(FooterItem, null, "TEST"))
+    );
+  }
+  _c = Footer;
+  var Container = _styledComponents["default"].footer(_templateObject || (_templateObject = (0, _taggedTemplateLiteral2["default"])(["\n  display: flex;\n  width: 100%;\n  height: 50px;\n  justify-content: space-between;\n  box-shadow: 0 -0.5rem 3rem 0 rgba(0, 0, 0, 0.19);\n  z-index: 10;\n  background-color: rgb(36, 51, 74);\n"])));
+  _c2 = Container;
+  var FooterItem = _styledComponents["default"].div(_templateObject2 || (_templateObject2 = (0, _taggedTemplateLiteral2["default"])(["\n  display: flex;\n  padding: 1rem;\n  width: 33%;\n  color: white;\n"])));
+  _c3 = FooterItem;
+  var _c, _c2, _c3;
+  $RefreshReg$(_c, "Footer");
+  $RefreshReg$(_c2, "Container");
+  $RefreshReg$(_c3, "FooterItem");
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
