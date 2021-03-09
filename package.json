@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cleanup": "rm -rf .cache dist",
     "start": "npx parcel public/index.html",
-    "build": "npm run cleanup && parcel build public/index.html --out-dir dist --public-url ./"
+    "build": "npm run cleanup && parcel public/index.html"
   },
   "repository": {
     "type": "git",
