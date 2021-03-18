@@ -19,7 +19,25 @@ export default function Project() {
           <ProjectBody>
             <ProjectHeader>Don't Skip Leg Day (DSLD)</ProjectHeader>
             <ProjectDescription>
-              DSLD is a fitness companion.
+              A workout companion that tracks a user's squat form through
+              computer vision, providing coaching through real-time feedback.
+              DSLD powers its visuals with{' '}
+              <ProjectLink
+                style={{
+                  padding: '0 0.3rem',
+                  margin: '0',
+                  textDecoration: 'underline',
+                }}
+                href="https://github.com/tensorflow/tfjs-models/tree/master/posenet"
+              >
+                PoseNet.js
+              </ProjectLink>{' '}
+              , tracking and displaying a user's body throughout an exercise.
+              The front end was built with React.js and stylized-components,
+              with a light-weight back end leveraging Firestore's NoSQL cloud
+              databasee. Additionally, it was built as a progressive web
+              application to provide compatibility for a wide range of devices,
+              desktop or mobile.
             </ProjectDescription>
             <ProjectLinks>
               <ProjectLink href="https://dsld-6914b.web.app/">
@@ -41,7 +59,9 @@ export default function Project() {
             <ProjectHeader>Stackafour</ProjectHeader>
             <ProjectDescription>
               Stackafour is a webapp implementation of Connect4, built with
-              D3.js and custom game logic.
+              D3.js and custom game logic. Developed during a weekend hackathon,
+              it combines algorithms with the rendering and styling capabilities
+              of D3 to create a dynamic game board.
             </ProjectDescription>
             <ProjectLinks>
               <ProjectLink href="http://stackafour.herokuapp.com/">
@@ -84,8 +104,10 @@ export default function Project() {
           <ProjectBody>
             <ProjectHeader>Jelly Beans and Shoes (JBS)</ProjectHeader>
             <ProjectDescription>
-              JBS is a mock e-commerce website selling various electronic
-              devices.
+              A mock e-commerce website selling various electronic devices. JBS
+              was a group project exploring all aspects of a deployed full stack
+              web application. The backend for our e-commerce site was handled
+              with PostgreSQL and local storage.
             </ProjectDescription>
             <ProjectLinks>
               <ProjectLink href="http://jellybeansandshoes.herokuapp.com/">
@@ -151,13 +173,16 @@ const ProjectLinks = styled.div`
 const ProjectLink = styled.a`
   padding: 0.5rem 1rem 0.5rem 1rem;
   color: rgb(36, 51, 74);
-  color: #453886;
   margin: 0 0.5rem 0 0.5rem;
   text-decoration: none;
 
-  :hover {
+  &:hover {
     background-color: rgb(36, 51, 74);
     color: white;
     border-radius: 5px;
+  }
+
+  &:visited {
+    color: white;
   }
 `;
