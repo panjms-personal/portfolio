@@ -14,7 +14,7 @@ export default function Intro() {
         <ContentItem style={{ fontSize: '1.8rem' }}>
           SOFTWARE ENGINEER
         </ContentItem>
-        <ContentItem>
+        <ContentItem style={{ marginTop: '1rem' }}>
           <SocialsLink href="https://www.linkedin.com/in/james--pan/">
             <FontAwesomeIcon
               icon={faLinkedin}
@@ -67,5 +67,5 @@ const ContentItem = styled.div`
 const SocialsLink = styled.a`
   text-decoration: none;
   color: white;
-  padding: 0.7rem 0.2rem 0 0.2rem;
+  padding: 0 0.2rem 0 0.2rem;
 `;
