@@ -1,8 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
-
-import App from './app';
+import React, { useEffect, useState, useRef } from 'react';
+import ReactDom from 'react-dom';
 import NavBar from './components/NavBar';
 import About from './components/About';
 import Intro from './components/Intro';
@@ -11,9 +8,17 @@ import Project from './components/Projects';
 import Footer from './components/Footer';
 import Routes from './routes';
 
-ReactDOM.render(
-  // <Router>
-  <App />,
-  // </Router>,
-  document.getElementById('app')
-);
+const App = () => {
+  return (
+    <>
+      <NavBar />
+      <Intro />
+      <About />
+      <Technology />
+      <Project />
+      <Footer />
+    </>
+  );
+};
+
+export default App;

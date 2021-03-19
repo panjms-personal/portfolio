@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useSpring, animated, interpolate } from 'react-spring';
 import { Link, useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import GlobalStyle from '../GlobalStyles';
@@ -6,7 +7,28 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 
+import { debounce } from '../debouce';
+
 export default function Intro() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', debounce(handleScroll));
+    console.log(scrollY);
+  }, [debounce]);
+
+  const [{ springscrollY }, springsetScrollY] = useSpring(() => ({
+    springscrollY: 0,
+  }));
+
+  const parallaxlevel = 20;
+  springsetScrollY({ springscrollY: scrollY });
+
+  const interpHeader = springscrollY.interpolate(
+    (o) => `translateY(${o / parallaxlevel}px)`
+  );
+
   return (
     <Container>
       <ContentContainer>
