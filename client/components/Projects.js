@@ -12,8 +12,9 @@ import JBSPhoto from 'url:~/public/images/JBSMock.png';
 
 export default function Project() {
   return (
-    <Container>
+    <Container id="projects">
       <ContentContainer>
+        <ContainerHeader>Projects</ContainerHeader>
         <ProjectContainer>
           <ProjectBody>
             <ProjectHeader>Don't Skip Leg Day (DSLD)</ProjectHeader>
@@ -138,6 +139,10 @@ const Container = styled.div`
   background-color: white;
 `;
 
+const ContainerHeader = styled.h1`
+  font-size: 2.5rem;
+`;
+
 const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -182,6 +187,7 @@ const ProjectBody = styled.div`
   }
 `;
 const ProjectHeader = styled.h1`
+  font-size: 1.5rem;
   margin-top: 0;
 `;
 const ProjectDescription = styled.div``;

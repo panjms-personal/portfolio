@@ -8,11 +8,13 @@ import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 
 import { Parallax } from 'react-scroll-parallax';
 
+import backgroundImg from 'url:../../public/images/photo-1596683720379-b11030608876.jpeg';
+
 export default function Intro() {
   return (
     <Parallax>
       <Container>
-        <Parallax y={[-60, 60]}>
+        <Parallax y={[-100, 100]}>
           <ContentContainer>
             <ContentItem style={{ fontSize: '4rem' }}>JAMES PAN</ContentItem>
             <ContentItem style={{ fontSize: '1.8rem' }}>
@@ -55,7 +57,7 @@ const Container = styled.div`
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background-image: url('https://images.unsplash.com/photo-1596683720379-b11030608876?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2250&q=80');
+  background-image: url(${backgroundImg});
   background-size: cover;
 `;
 
