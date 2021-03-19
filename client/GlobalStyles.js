@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .dropdown-closed {
-    left: -150%;
+    left: -100%;
   }
 
   .dropdown-open {
@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
 
   @media only screen and (min-width: 753px){
     .dropdown-closed {
-    left: -40%;
+    left: -30%;
   }
 
   .dropdown-open {
@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
 
   @media only screen and (min-width: 960px) {
     .dropdown-closed {
-    left: -40%;
+    left: -30%;
   }
 
     .dropdown-open {
