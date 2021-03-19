@@ -8,7 +8,7 @@ import { Parallax } from 'react-scroll-parallax';
 export default function About() {
   return (
     <Parallax>
-      <Container>
+      <Container id="about">
         <GlobalStyle />
         <ContentContainer>
           <Parallax>

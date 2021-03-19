@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import GlobalStyle from '../GlobalStyles';
 
@@ -9,7 +8,7 @@ export default function Technology() {
   return (
     <Parallax>
       <Parallax x={[-25, 0]}>
-        <Container>
+        <Container id="tech">
           <ContentHeader>Technologies</ContentHeader>
           <ContentContainer>
             <ContentItem>

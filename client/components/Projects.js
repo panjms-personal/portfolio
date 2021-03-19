@@ -12,7 +12,7 @@ import JBSPhoto from 'url:~/public/images/JBSMock.png';
 
 export default function Project() {
   return (
-    <Container>
+    <Container id="projects">
       <ContentContainer>
         <ProjectContainer>
           <ProjectBody>

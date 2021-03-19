@@ -3,11 +3,9 @@ import styled from 'styled-components';
 import GlobalStyle from '../GlobalStyles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-scroll';
 
-import About from './components/About';
-import Intro from './components/Intro';
-import Technology from './components/Technology';
-import Project from './components/Projects';
+import Projects from './Projects';
 
 export default function NavBar() {
   const [hamburgerDrop, setHamburgerDrop] = useState(false);
@@ -26,9 +24,23 @@ export default function NavBar() {
         <Dropdown
           className={hamburgerDrop ? 'dropdown-open' : 'dropdown-closed'}
         >
-          <DropdownItem>About Me</DropdownItem>
-          <DropdownItem>Tech Stack</DropdownItem>
-          <DropdownItem>Projects</DropdownItem>
+          <DropdownItem>
+            {' '}
+            <Link to="about" spy={true} smooth={true} duration={500}>
+              About Me
+            </Link>
+          </DropdownItem>
+          <DropdownItem>
+            <Link to="tech" spy={true} smooth={true} duration={500}>
+              Tech Stack
+            </Link>
+          </DropdownItem>
+          <DropdownItem>
+            {' '}
+            <Link to="projects" spy={true} smooth={true} duration={500}>
+              Projects
+            </Link>
+          </DropdownItem>
         </Dropdown>
       </NavItem>
       <NavItem></NavItem>
