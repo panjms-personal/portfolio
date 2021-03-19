@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
+
+import App from './app';
 import NavBar from './components/NavBar';
 import About from './components/About';
 import Intro from './components/Intro';
@@ -10,14 +12,8 @@ import Footer from './components/Footer';
 import Routes from './routes';
 
 ReactDOM.render(
-  <Router>
-    <NavBar />
-    <Intro />
-    <About />
-    <Technology />
-    <Project />
-    <Footer />
-    <Routes />
-  </Router>,
+  // <Router>
+  <App />,
+  // </Router>,
   document.getElementById('app')
 );

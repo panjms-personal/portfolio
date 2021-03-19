@@ -6,39 +6,45 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 
+import { Parallax } from 'react-scroll-parallax';
+
 export default function Intro() {
   return (
-    <Container>
-      <ContentContainer>
-        <ContentItem style={{ fontSize: '4rem' }}>JAMES PAN</ContentItem>
-        <ContentItem style={{ fontSize: '1.8rem' }}>
-          SOFTWARE ENGINEER
-        </ContentItem>
-        <ContentItem style={{ marginTop: '1rem' }}>
-          <SocialsLink href="https://www.linkedin.com/in/james--pan/">
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              onClick={function () {}}
-              style={{ fontSize: '1.5rem' }}
-            />
-          </SocialsLink>
-          <SocialsLink href="https://github.com/panjms">
-            <FontAwesomeIcon
-              icon={faGithub}
-              onClick={function () {}}
-              style={{ fontSize: '1.5rem' }}
-            />
-          </SocialsLink>
-          <SocialsLink href="mailto:panjms@gmail.com?subject=Hello!">
-            <FontAwesomeIcon
-              icon={faEnvelopeSquare}
-              onClick={function () {}}
-              style={{ fontSize: '1.5rem' }}
-            />
-          </SocialsLink>
-        </ContentItem>
-      </ContentContainer>
-    </Container>
+    <Parallax>
+      <Container>
+        <Parallax y={[-60, 60]}>
+          <ContentContainer>
+            <ContentItem style={{ fontSize: '4rem' }}>JAMES PAN</ContentItem>
+            <ContentItem style={{ fontSize: '1.8rem' }}>
+              SOFTWARE ENGINEER
+            </ContentItem>
+            <ContentItem style={{ marginTop: '1rem' }}>
+              <SocialsLink href="https://www.linkedin.com/in/james--pan/">
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  onClick={function () {}}
+                  style={{ fontSize: '1.5rem' }}
+                />
+              </SocialsLink>
+              <SocialsLink href="https://github.com/panjms">
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  onClick={function () {}}
+                  style={{ fontSize: '1.5rem' }}
+                />
+              </SocialsLink>
+              <SocialsLink href="mailto:panjms@gmail.com?subject=Hello!">
+                <FontAwesomeIcon
+                  icon={faEnvelopeSquare}
+                  onClick={function () {}}
+                  style={{ fontSize: '1.5rem' }}
+                />
+              </SocialsLink>
+            </ContentItem>
+          </ContentContainer>
+        </Parallax>
+      </Container>
+    </Parallax>
   );
 }
 
