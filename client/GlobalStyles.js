@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .dropdown-closed {
-    left: -100%;
+    left: -150%;
   }
 
   .dropdown-open {
@@ -41,24 +41,24 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  .dropdown-closed-right {
+  /* .dropdown-closed-right {
     left: 100%;
   }
 
   .dropdown-open-right {
     left: 0;
         backdrop-filter: blur(5px);
-  }
+  } */
 
   @media only screen and (min-width: 674px) {
   .dropdown-closed-right {
     left: 100%;
   }
 
-  .dropdown-open-right {
+  /* .dropdown-open-right {
     left: 70%;
     backdrop-filter: blur(5px);
-  }
+  } */
   }
 
   @media only screen and (max-width: 959px){
