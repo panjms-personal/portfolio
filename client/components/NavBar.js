@@ -26,19 +26,42 @@ export default function NavBar() {
         >
           <DropdownItem>
             {' '}
-            <Link to="about" spy={true} smooth={true} duration={500}>
-              About Me
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={function () {
+                setHamburgerDrop(!hamburgerDrop);
+              }}
+            >
+              <NavLink>About Me</NavLink>
             </Link>
           </DropdownItem>
           <DropdownItem>
-            <Link to="tech" spy={true} smooth={true} duration={500}>
-              Tech Stack
+            <Link
+              to="tech"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={function () {
+                setHamburgerDrop(!hamburgerDrop);
+              }}
+            >
+              <NavLink>Tech Stack</NavLink>
             </Link>
-          </DropdownItem>
+          </DropdownItem>{' '}
           <DropdownItem>
-            {' '}
-            <Link to="projects" spy={true} smooth={true} duration={500}>
-              Projects
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={function () {
+                setHamburgerDrop(!hamburgerDrop);
+              }}
+            >
+              <NavLink>Projects</NavLink>
             </Link>
           </DropdownItem>
         </Dropdown>
@@ -101,4 +124,11 @@ const DropdownItem = styled.div`
   color: white;
   font-size: 1.5rem;
   padding-top: 0.5rem;
+`;
+
+const NavLink = styled.div`
+  :hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 `;

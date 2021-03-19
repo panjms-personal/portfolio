@@ -14,7 +14,7 @@ export default function Intro() {
   return (
     <Parallax>
       <Container>
-        <Parallax y={[-70, 70]}>
+        <Parallax y={[-100, 100]}>
           <ContentContainer>
             <ContentItem style={{ fontSize: '4rem' }}>JAMES PAN</ContentItem>
             <ContentItem style={{ fontSize: '1.8rem' }}>
