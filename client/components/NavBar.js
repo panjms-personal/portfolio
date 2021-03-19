@@ -60,17 +60,17 @@ const Dropdown = styled.div`
   top: 50px;
   background-color: rgba(0, 0, 0, 0.3);
   height: 100%;
-  padding: 0;
   width: 100%;
+  margin: 0;
   transition: 0.2s;
 
   @media only screen and (min-width: 673px) {
-    padding: 0 2.5rem;
+    padding-left: 2.5rem;
     width: 30%;
   }
 
   @media only screen and (min-width: 960px) {
-    padding: 0 2.5rem;
+    padding-left: 2.5rem;
     width: 30%;
   }
 
