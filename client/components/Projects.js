@@ -15,7 +15,6 @@ export default function Project() {
     <Container>
       <ContentContainer>
         <ProjectContainer>
-          <ProjectImage src={DSLDPhoto}></ProjectImage>
           <ProjectBody>
             <ProjectHeader>Don't Skip Leg Day (DSLD)</ProjectHeader>
             <ProjectDescription>
@@ -52,9 +51,9 @@ export default function Project() {
               </ProjectLink>
             </ProjectLinks>
           </ProjectBody>
+          <ProjectImage src={DSLDPhoto}></ProjectImage>
         </ProjectContainer>
         <ProjectContainer>
-          <ProjectImage src={StackafourPhoto}></ProjectImage>
           <ProjectBody>
             <ProjectHeader>Stackafour</ProjectHeader>
             <ProjectDescription>
@@ -76,9 +75,9 @@ export default function Project() {
               </ProjectLink>
             </ProjectLinks>
           </ProjectBody>
+          <ProjectImage src={StackafourPhoto}></ProjectImage>
         </ProjectContainer>
         <ProjectContainer>
-          <ProjectImage src={P2PPhoto}></ProjectImage>
           <ProjectBody>
             <ProjectHeader>Pan to Pan (P2P)</ProjectHeader>
             <ProjectDescription>
@@ -98,9 +97,9 @@ export default function Project() {
               </ProjectLink>
             </ProjectLinks>
           </ProjectBody>
+          <ProjectImage src={P2PPhoto}></ProjectImage>
         </ProjectContainer>
         <ProjectContainer>
-          <ProjectImage src={JBSPhoto}></ProjectImage>
           <ProjectBody>
             <ProjectHeader>Jelly Beans and Shoes (JBS)</ProjectHeader>
             <ProjectDescription>
@@ -122,6 +121,7 @@ export default function Project() {
               </ProjectLink>
             </ProjectLinks>
           </ProjectBody>
+          <ProjectImage src={JBSPhoto}></ProjectImage>
         </ProjectContainer>
       </ContentContainer>
     </Container>
@@ -147,20 +147,43 @@ const ContentContainer = styled.div`
 
 const ProjectContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin: 2rem 0 2rem 0;
   width: 80%;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgb(36, 51, 74);
+
+  @media only screen and (min-width: 867px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 `;
 const ProjectImage = styled.img`
-  width: 40%;
+  width: 75%;
+  margin-top: 1.5rem;
+  @media only screen and (min-width: 867px) {
+    width: 45%;
+    margin-top: 0;
+  }
 `;
 
 const ProjectBody = styled.div`
-  width: 55%;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media only screen and (min-width: 867px) {
+    width: 55%;
+    align-items: flex-start;
+    padding-right: 2rem;
+  }
 `;
-const ProjectHeader = styled.h1``;
+const ProjectHeader = styled.h1`
+  margin-top: 0;
+`;
 const ProjectDescription = styled.div``;
 
 const ProjectLinks = styled.div`
