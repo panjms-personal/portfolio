@@ -60,7 +60,7 @@ const Dropdown = styled.div`
   top: 50px;
   background-color: rgba(0, 0, 0, 0.3);
   height: 100%;
-  padding: 0 1rem 0 1rem;
+  padding: 0;
   width: 100%;
   transition: 0.2s;
 

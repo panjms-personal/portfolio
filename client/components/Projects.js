@@ -187,6 +187,7 @@ const ProjectHeader = styled.h1`
 const ProjectDescription = styled.div``;
 
 const ProjectLinks = styled.div`
+  width: 90%;
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -196,7 +197,7 @@ const ProjectLinks = styled.div`
 const ProjectLink = styled.a`
   padding: 0.5rem 1rem 0.5rem 1rem;
   color: rgb(36, 51, 74);
-  margin: 0 0.5rem 0 0.5rem;
+  margin: 1rem 0.5rem 0 0.5rem;
   text-decoration: none;
 
   &:hover {
