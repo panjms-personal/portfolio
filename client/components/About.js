@@ -3,35 +3,42 @@ import { Link, useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import GlobalStyle from '../GlobalStyles';
 
+import { Parallax } from 'react-scroll-parallax';
+
 export default function About() {
   return (
-    <Container>
-      <GlobalStyle />
-      <ContentContainer>
-        <ContentItem>
-          Hello! My name is James and I am a full-stack software engineer based
-          in New York City.
-        </ContentItem>
-        <br></br>
-        <ContentItem>
-          I began my career as an elementary school teacher in the South Bronx.
-          After looking for a more technical position, I became a Credit Risk
-          Analyst where I found my passion for coding during one of projects.
-        </ContentItem>
-        <br></br>
-        <ContentItem>
-          Most recently, I graduated from Fullstack Academy, a 17-week long
-          immersive coding bootcamp, where I learned the core components for
-          full stack JavaScript web development through pair programming and
-          team projects.
-        </ContentItem>
-        <br></br>
-        <ContentItem>
-          I am passionate about both building & problem-solving and am looking
-          to extend this passion as a full time software engineer.
-        </ContentItem>
-      </ContentContainer>
-    </Container>
+    <Parallax>
+      <Container>
+        <GlobalStyle />
+        <ContentContainer>
+          <Parallax>
+            <ContentItem>
+              Hello! My name is James and I am a full-stack software engineer
+              based in New York City.
+            </ContentItem>
+            <br></br>
+            <ContentItem>
+              I began my career as an elementary school teacher in the South
+              Bronx. After looking for a more technical position, I became a
+              Credit Risk Analyst where I found my passion for coding during one
+              of projects.
+            </ContentItem>
+            <br></br>
+            <ContentItem>
+              Most recently, I graduated from Fullstack Academy, a 17-week long
+              immersive coding bootcamp, where I learned the core components for
+              full stack JavaScript web development through pair programming and
+              team projects.
+            </ContentItem>
+            <br></br>
+            <ContentItem>
+              I am passionate about both building & problem-solving and am
+              looking to extend this passion as a full time software engineer.
+            </ContentItem>
+          </Parallax>
+        </ContentContainer>
+      </Container>
+    </Parallax>
   );
 }
 

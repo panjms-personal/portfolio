@@ -8,16 +8,18 @@ import Project from './components/Projects';
 import Footer from './components/Footer';
 import Routes from './routes';
 
+import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
+
 const App = () => {
   return (
-    <>
+    <ParallaxProvider>
       <NavBar />
       <Intro />
       <About />
       <Technology />
       <Project />
       <Footer />
-    </>
+    </ParallaxProvider>
   );
 };
 
