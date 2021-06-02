@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import GlobalStyle from '../GlobalStyles';
 
@@ -6,34 +7,31 @@ import { Parallax } from 'react-scroll-parallax';
 
 export default function Technology() {
   return (
-    <Parallax>
-      <Parallax x={[-25, 0]}>
-        <Container id="tech">
-          <ContentHeader>Technologies</ContentHeader>
-          <ContentContainer>
-            <ContentItem>
-              <ItemHeader>Front end</ItemHeader>
-              <TechList>
-                <TechItem>React/React Hooks</TechItem>
-                <TechItem>Redux</TechItem>
-                <TechItem>styled-components</TechItem>
-                <TechItem>HTML5</TechItem>
-                <TechItem>CSS3</TechItem>
-              </TechList>
-            </ContentItem>
-            <ContentItem>
-              <ItemHeader>Back end</ItemHeader>
-              <TechList>
-                <TechItem>Express</TechItem>
-                <TechItem>PostgreSQL</TechItem>
-                <TechItem>NoSQL</TechItem>
-                <TechItem>Firestore</TechItem>
-              </TechList>
-            </ContentItem>
-          </ContentContainer>
-        </Container>
-      </Parallax>
-    </Parallax>
+    <Container>
+      <ContentHeader>Technologies</ContentHeader>
+      <ContentContainer>
+        <ContentItem>
+          <ItemHeader>Front end</ItemHeader>
+          <TechList>
+            <TechItem>React/React Hooks</TechItem>
+            <TechItem>Redux</TechItem>
+            <TechItem>styled-components</TechItem>
+            <TechItem>HTML5</TechItem>
+            <TechItem>CSS3</TechItem>
+          </TechList>
+        </ContentItem>
+        <ContentItem>
+          <ItemHeader>Back end</ItemHeader>
+          <TechList>
+            <TechItem>Node</TechItem>
+            <TechItem>Express</TechItem>
+            <TechItem>PostgreSQL</TechItem>
+            <TechItem>NoSQL</TechItem>
+            <TechItem>Firestore</TechItem>
+          </TechList>
+        </ContentItem>
+      </ContentContainer>
+    </Container>
   );
 }
 
